@@ -14,6 +14,7 @@ body {
        padding: 0;
        display: flex;
        justify-content: center;
+       background-color: rgb(137, 248, 248);
 }
 .instagram-wrapper {
        display: flex;
@@ -48,9 +49,12 @@ body {
        width: 100%;
        padding: 1.3rem 0;
        border: 1px solid lightgray;
+       border-radius: 5px;
 }
 .group:nth-child(1) {
        min-height: 19rem;
+       height: 400px;
+       margin-bottom: 10px;
 }
 .instagram-logo {
        height: 3rem;
@@ -63,7 +67,7 @@ body {
        overflow: hidden;
 }
 .profile-photo img {
-       height: 6rem;
+       height: 10rem;
 }
 .instagram-login {
        background-color: #0095f6;
@@ -108,3 +112,22 @@ body {
 .app-download:nth-child(2) {
        background-image: url('./img/googleplay-button.png');
 }
+
+@media(max-width: 1024px) {
+       .instagram-wrapper {
+              width: 90%;
+       }
+}
+
+@media(max-width: 650px) {
+       .instagram-wrapper {
+              width: 90%;    
+       }
+       .instagram-phone {
+              display: none;
+       }
+       .instagram-continue {
+              width: 100%;
+       }
+}
+
